@@ -1646,8 +1646,9 @@ button.ui-button::-moz-focus-inner {
   padding: 15px;
   border: 1px solid #adadad; }
 .contentWrapper .ui-toolbar {
-  float: left;
   margin-bottom: 5px; }
+.contentWrapper .ui-toolbar .dataTables_filter {
+  float: left; }
 
 .typo3-extension-list {
   border-spacing: 0; }
@@ -1718,3 +1719,10 @@ button.ui-button::-moz-focus-inner {
   background: #fff; }
 .typo3-extension-list .even {
   background: #f7f7f7; }
+
+.dataTables_info {
+  display: none; }
+
+.dataTables_paginate {
+  float: left;
+  margin: 10px 0 0; }

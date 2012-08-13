@@ -12,11 +12,10 @@
 	border: 1px solid #adadad;
 
 	.ui-toolbar {
-		float: left;
 		margin-bottom: 5px;
 
 		.dataTables_filter {
-
+			float: left;
 		}
 	}
 }
@@ -103,4 +102,19 @@
 		background: #f7f7f7;
 	}
 }
+
+
+
+// Paginator
+.dataTables_info {
+	display: none;
+}
+
+.dataTables_paginate {
+	float: left;
+	margin: 10px 0 0;
+}
+
+
+
 

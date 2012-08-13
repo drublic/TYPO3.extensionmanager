@@ -75,4 +75,13 @@ $useIEFilters: 0;
 
 
 
+@mixin stable {
+	@include linear-gradient(#87b374, #87b374 0%, #5f8d4b 100%);
+}
+
+
+@mixin beta {
+	@include linear-gradient(#f39300, #f39300 0%, #d15e00 100%);
+}
+
 

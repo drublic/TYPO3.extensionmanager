@@ -7,14 +7,14 @@ $useIEFilters: 0;
 	        border-radius: $values;
 }
 
-@mixin box-shadow ($x, $y, $offset, $hex) {
-	-webkit-box-shadow: $x $y $offset $hex;
-	        box-shadow: $x $y $offset $hex;
+@mixin box-shadow ($values) {
+	-webkit-box-shadow: $values;
+	        box-shadow: $values;
 }
 
 
-@mixin linear-gradient($from, $to, $ie: $useIEFilters) {
-	background-color: $to;
+@mixin linear-gradient($preset, $from, $to, $ie: $useIEFilters) {
+	background-color: $preset;
 	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
 	background-image: -webkit-linear-gradient(top, $from, $to);
 	background-image:    -moz-linear-gradient(top, $from, $to);

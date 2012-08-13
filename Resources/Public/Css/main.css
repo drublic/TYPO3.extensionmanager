@@ -1486,12 +1486,6 @@ button.ui-button::-moz-focus-inner {
 #typo3-extension-manager {
   margin: 30px; }
 
-.contentWrapper .ui-corner-tl {
-  -moz-border-radius-topleft: 0;
-  -webkit-border-top-left-radius: 0;
-  -khtml-border-top-left-radius: 0;
-  border-top-left-radius: 0; }
-
 .contentWrapper .ui-widget-header {
   background: none;
   border: none;
@@ -1556,24 +1550,20 @@ button.ui-button::-moz-focus-inner {
   height: 25px; }
 
 #typo3-extension-main-menu .tabs ul li a, #typo3-extension-configuration-forms .tabs ul li a {
-  padding: 5px 15px;
-  height: 15px;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
   float: left;
-  display: block;
-  margin-right: 2px;
+  height: 15px;
   background: #dadada;
+  padding: 5px 15px;
+  margin-right: 2px;
   border: 1px solid #adadad;
-  border-bottom: none;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  color: #606060;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-top-right-radius: 3px; }
+  border-bottom: 0;
+  color: #606060; }
 
 #typo3-extension-main-menu .tabs ul li a:hover, #typo3-extension-configuration-forms .tabs ul li a:hover {
-  background-color: #eeeeee;
+  background-color: #eee;
   border-color: #adadad;
   color: #606060; }
 
@@ -1583,34 +1573,30 @@ button.ui-button::-moz-focus-inner {
 
 .contentWrapper, #typo3-extension-configuration-forms .category {
   background-color: #ececec;
-  background-image: linear-gradient(bottom, #ececec 36%, white 100%);
-  background-image: -o-linear-gradient(bottom, #ececec 36%, white 100%);
-  background-image: -moz-linear-gradient(bottom, #ececec 36%, white 100%);
-  background-image: -webkit-linear-gradient(bottom, #ececec 36%, white 100%);
-  background-image: -ms-linear-gradient(bottom, #ececec 36%, white 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.36, #ececec), color-stop(1, white));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ececec 36%), to(white 100%));
+  background-image: -webkit-linear-gradient(top, #ececec 36%, white 100%);
+  background-image: -moz-linear-gradient(top, #ececec 36%, white 100%);
+  background-image: -ms-linear-gradient(top, #ececec 36%, white 100%);
+  background-image: -o-linear-gradient(top, #ececec 36%, white 100%);
+  background-image: linear-gradient(to bottom, #ececec 36%, white 100%);
   background-repeat: repeat-x;
   border: 1px solid #adadad;
   padding: 15px; }
 
 #typo3-extension-configuration-forms .error, #typo3-extension-configuration-forms .invalid {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  -webkit-box-shadow: 0 0 6px #dddddd;
+  box-shadow: 0 0 6px #dddddd;
   /* supply height to ensure consistent positioning for every browser */
   height: 15px;
   background-color: #ff2262;
-  border: 1px solid #E1E16D;
+  border: 1px solid #e1e16d;
   font-size: 11px;
   color: #000;
   padding: 3px 10px;
-  margin-left: -2px;
-  /* CSS3 spicing for mozilla and webkit */
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -moz-box-shadow: 0 0 6px #ddd;
-  -webkit-box-shadow: 0 0 6px #ddd; }
+  margin-left: -2px; }
 
 .obsolete, .test, .experimental {
   background-color: #a3a3a3; }
@@ -1639,14 +1625,14 @@ button.ui-button::-moz-focus-inner {
   color: #ff2262; }
 
 .headerTooltip, .tooltip {
+  -webkit-box-shadow: 2px 2px 11px #666666;
+  box-shadow: 2px 2px 11px #666666;
   display: none;
   width: 400px;
   background-color: #ffa;
   border: 1px solid #cc9;
   padding: 3px;
   font-size: 13px;
-  -moz-box-shadow: 2px 2px 11px #666;
-  -webkit-box-shadow: 2px 2px 11px #666;
   z-index: 1000; }
 
 .headerTooltip {

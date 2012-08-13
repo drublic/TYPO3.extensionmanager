@@ -36,10 +36,6 @@
 	float: right;
 }
 
-.contentWrapper .ui-toolbar {
-	padding: 5px;
-}
-
 .dataTables_paginate {
 	width: auto;
 }
@@ -83,21 +79,27 @@
 /* root element for tabs  */
 #typo3-extension-main-menu .tabs ul,
 #typo3-extension-configuration-forms .tabs ul {
-	list-style:none;
-	padding:0;
-	height: 25px;
+	list-style: none;
+	padding: 0;
+	margin-bottom: -1px;
+
+	&:after {
+		display: table;
+		content: "";
+		clear: both;
+	}
 }
 
 
 #typo3-extension-main-menu .tabs ul li a,
 #typo3-extension-configuration-forms .tabs ul li a {
-	@include border-radius(3px 3px 0 0);
+	@include border-radius(4px 4px 0 0);
 
 	float: left;
 	height: 15px;
 	background: #dadada;
 
-	padding: 5px 15px;
+	padding: 7px 15px;
 	margin-right: 2px;
 	border: 1px solid #adadad;
 	border-bottom: 0;
@@ -114,13 +116,10 @@
 
 #typo3-extension-main-menu .tabs ul li a.current,
 #typo3-extension-configuration-forms .tabs ul li a.current {
-	background: #ffffff;
+	background: #fff;
 	color: #000;
 }
-.contentWrapper,
 #typo3-extension-configuration-forms .category {
-	@include  linear-gradient(#ececec, rgb(236,236,236) 36%, rgb(255,255,255) 100%);
-
 	background-repeat: repeat-x;
 	border: 1px solid #adadad;
 	padding: 15px;

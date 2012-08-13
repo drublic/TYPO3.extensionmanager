@@ -4,3 +4,47 @@
 	float: right;
 }
 
+
+// Search
+.contentWrapper {
+	@include linear-gradient(#ececec, rgb(255,255,255) 0, rgb(236,236,236) 36%);
+	padding: 15px;
+	border: 1px solid #adadad;
+
+	.ui-toolbar {
+		float: left;
+		margin-bottom: 5px;
+
+		.dataTables_filter {
+
+		}
+	}
+}
+
+
+
+// Table
+.typo3-extension-list {
+
+	border-spacing: 0;
+
+	thead {
+		@include linear-gradient(#5b5b5b, #7f7f7f 10%, #5b5b5b 100%);
+	}
+
+	th {
+		background: none;
+		border: 0;
+		padding: 7px 10px;
+
+		vertical-align: middle;
+
+		font-weight: bold;
+		color: #fff;
+
+		.DataTables_sort_icon {
+			display: none;
+		}
+	}
+}
+

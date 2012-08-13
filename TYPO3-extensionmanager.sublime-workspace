@@ -1,0 +1,586 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"new",
+				"newQuestion"
+			],
+			[
+				"quest",
+				"questions"
+			],
+			[
+				"un",
+				"uniqueCategoryId"
+			],
+			[
+				"find",
+				"findByCategoryId"
+			],
+			[
+				"q",
+				"questions"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"Current",
+				"currentProduct"
+			],
+			[
+				"current",
+				"currentProduct"
+			],
+			[
+				"to",
+				"toJSON"
+			],
+			[
+				"Cate",
+				"category"
+			],
+			[
+				"Ärzte",
+				"Ärzte-Gruppen"
+			],
+			[
+				"clic",
+				"clickLock"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"render",
+				"rendered"
+			],
+			[
+				"accordi",
+				"accordion-body"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"coll",
+				"collapse"
+			],
+			[
+				"Ques",
+				"questions"
+			],
+			[
+				"qu",
+				"question"
+			],
+			[
+				"ques",
+				"Questions"
+			],
+			[
+				"wi",
+				"max-width"
+			],
+			[
+				"w",
+				"max-width"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"no-",
+				"no-svg"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"get_sear",
+				"get_search_form"
+			],
+			[
+				"back",
+				"background	filter: AlphaImageLoader [for IE PNGs]"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"conver",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"c",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"co",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/Macintosh HD/Users/hans/Sites/resources/TYPO3/Core/typo3/tce_db.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/main.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/models/category.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/data/questions.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/data/presets/brasil.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/data/countries.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/views/product.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/models/product.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/models/question.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/views/category.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/views/question.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/views/graph.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/views/progress.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/data/categories.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/data/products.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/custom/_base.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/index.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/data/presets/india.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/custom/_sidebar.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/custom/_modals.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/custom/_custom.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/vendor/lodash.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/vendor/jquery.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/app.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/config.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/_navbar.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/_mixins.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/_navs.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/_wells.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/custom/_header.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/plugins/jquery.rangeSlider.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/Gruntfile.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/main.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/css/main.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/plugins/bootstrap.collapse.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/vendor/raphael.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/bootstrap-alert.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/bootstrap-button.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/plugins/bootstrap.typeahead.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/plugins/bootstrap.tooltip.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/bootstrap-carousel.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/bootstrap-tab.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/bootstrap-transition.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/_accordion.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/plugins/jquery.rangeSlider",
+		"/Users/hans/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/.htaccess",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/plugins/backbone.localstorage.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/views/categoriy.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/views/categoriesView.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/router.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/vendor/require.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/img/glyphicons-halflings.png",
+		"/Users/hans/Library/Caches/Cleanup At Startup/Transmit/49CB4ECE-03AB-4805-96F4-2CFED6C5AAC2/impressum.php",
+		"/Users/hans/Library/Caches/Cleanup At Startup/Transmit/F638C394-DDE4-4130-A3E4-B252B7295CBE/db_connect.php",
+		"/Users/hans/Library/Caches/Cleanup At Startup/Transmit/11969477-5FDB-47DA-8B88-3A427F3E9BEB/home.php",
+		"/Users/hans/Library/Caches/Cleanup At Startup/Transmit/53E1E5F8-7A77-48ED-872C-CE1CC2E68A0D/index.php",
+		"/Users/hans/Library/Caches/Cleanup At Startup/Transmit/6BE394E1-FCAF-4BC9-8635-BBFD6E6C4FEC/db_connect.php",
+		"/Users/hans/Library/Caches/Cleanup At Startup/Transmit/C6D98C79-C070-4DF6-A1EA-4932E0E99A3F/index.php",
+		"/Users/hans/Library/Caches/Cleanup At Startup/Transmit/8BED49E7-1E69-4DCC-90A9-B8B738AC8EB3/home.php",
+		"/Users/hans/Library/Caches/Cleanup At Startup/Transmit/785FEF81-9C7A-4432-B7EF-17B4D9C9F645/index.php",
+		"/Users/hans/Downloads/usr_web163_2.sql",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/plugins/backbone.layoutmanager.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/vendor/backbone.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/js/vendor/jquery-1.7.2.min.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/templates",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/package.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/scss/_pager.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/sass/main.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/sass/bootstrap.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/.editorconfig",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/mdecs/form/repo/Makefile",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/js/plugins/scrollspy.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/helpers/_h5bp.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/mobile/_tablets.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/main.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/js/vendor/modernizr-2.6.1-custom.min.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/header.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/footer.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/js/vendor/modernizr-2.5.3-custom.min.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/Gruntfile.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/helpers/_vars-mixins.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/page/_base.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/page/_expert.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/elements/_slider.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/main.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/sftp-config.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/mobile/_mobile.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/js/main.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/helpers/vars-mixins.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/modules/_forms.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/js/plugins/modal.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/style.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/js/plugins/orbit.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/js/plugins.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/package.json",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/grunt-tasks/helper.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/grunt-tasks/helpers.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/grunt-tasks/copy.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/page/expert.scss",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/index.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/.gitignore",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/modal.styl",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/096af124e35.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/content-expert.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/content-technology.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/content-members.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/style.styl",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/expert.styl",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/content-posts.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/content-references.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/forms.styl",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/js/plugins/modals.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/js/vendor/modernizr-2.0.6.min.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/css/style.css",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/apple-touch-icon-144x144-precomposed.png",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/page.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/backend/hooks.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/backend/cpt.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/backend/admin-save.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/backend/config.php",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/grunt.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/.htaccess",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/intermediate/publish/js/plugins.js",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/publish/index.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/index.html",
+		"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/gh-website/repo/publish/css/651c6796.style.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"id",
+			"Id",
+			"id",
+			"\"id\"",
+			"app.questions",
+			"app.quest",
+			"new app.QuestionsCollection",
+			"app.Question",
+			"new app.Question",
+			"app.Question",
+			"app.Category",
+			"CategoriesCollection",
+			"categoryId",
+			"\"id\"",
+			"current",
+			",\n		\"progress\": 0",
+			",\n		\"progress\": 0\n	",
+			",",
+			",\n		\"progress\": 0\n	",
+			"		\"progress\": 0\n",
+			"GraphView",
+			"CategoryGraphView",
+			"QuestionGraphView",
+			"70",
+			"_render",
+			".container",
+			"container",
+			"paper",
+			"gradie",
+			"CategoryGraphView",
+			"options",
+			"element",
+			"lock",
+			"$parent",
+			"settings",
+			"license",
+			"rebuildMidBar",
+			"locToScale",
+			"scaleToLoc",
+			"move",
+			"rebuildMidBar",
+			"icon-lock",
+			"if",
+			"CategoryView",
+			"div",
+			"getAll",
+			"findAll",
+			"isLocked",
+			"contact",
+			"wpcf7-f131-t1-o1",
+			"exper",
+			"our-experience",
+			"navi",
+			"color",
+			"left",
+			"border-ra",
+			"border-ta",
+			"gradient(",
+			"modal",
+			"change",
+			"change();",
+			"class=\"close",
+			"#close",
+			"modal.show",
+			"modal",
+			"data-toggle=\"modal\"",
+			" data-toggle=\"modal\"",
+			"modal hide",
+			"modal",
+			"init",
+			"modals.init",
+			"hgroup",
+			"wpcf7-validation-errors",
+			"'taxonomies' => ''",
+			"foreach",
+			"arrow-right",
+			"img",
+			".hide",
+			".lb-caption, .hide",
+			"#contact-form",
+			"contact-form",
+			"js",
+			"modal",
+			"module",
+			"posted_on",
+			"scroll",
+			"width",
+			"base_off",
+			"body",
+			"bory",
+			"references",
+			"contact",
+			"links",
+			"small",
+			"expert",
+			"modal",
+			"small-arrow",
+			"svg",
+			"modal-backdrop",
+			"next",
+			"user-messages",
+			"js-inactive",
+			"no-js",
+			"template",
+			"searchform",
+			"tab",
+			"cmd+[",
+			"indentation",
+			"tab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"questionId\"",
+			"\"categoryId\"",
+			"",
+			"'taxonomies' => array()"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 591.0,
+		"selected_items":
+		[
+			[
+				"dgu",
+				"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/dgu-online/repo/dgu-online-theme.sublime-project"
+			],
+			[
+				"",
+				"/Volumes/Macintosh HD/Users/hans/Sites/gebruederheitz/createam/relaunch/repo/createam.sublime-project"
+			],
+			[
+				"colr",
+				"/Volumes/Macintosh HD/Users/hans/Sites/colored.by/fb-gradient/colored-by.fb-gradient.sublime-project"
+			]
+		],
+		"width": 732.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true
+}

@@ -27,8 +27,17 @@
 
 	border-spacing: 0;
 
+	// Header
 	thead {
 		@include linear-gradient(#5b5b5b, #7f7f7f 10%, #5b5b5b 100%);
+
+		tr {
+			background: none !important;
+
+			&:hover {
+				background: none;
+			}
+		}
 	}
 
 	th {
@@ -40,6 +49,11 @@
 
 		font-weight: bold;
 		color: #fff;
+
+
+		&:hover {
+			background: none;
+		}
 
 		.DataTables_sort_icon {
 			display: none;

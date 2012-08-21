@@ -88,25 +88,27 @@
 	background: #dadada;
 
 	padding: 7px 15px;
+	margin-top: -1px;
 	margin-right: 2px;
 	border: 1px solid #adadad;
-	border-bottom: 0;
 
 	color: #606060;
+
+	&:hover {
+		background-color: #eee;
+		border-color: #adadad;
+		color: #606060;
+	}
+
+	&.current {
+		background: #fff;
+		color: #000;
+		border-bottom: 0;
+
+		padding-top: 8px;
+	}
 }
 
-#typo3-extension-main-menu .tabs ul li a:hover,
-#typo3-extension-configuration-forms .tabs ul li a:hover {
-	background-color: #eee;
-	border-color: #adadad;
-	color: #606060;
-}
-
-#typo3-extension-main-menu .tabs ul li a.current,
-#typo3-extension-configuration-forms .tabs ul li a.current {
-	background: #fff;
-	color: #000;
-}
 #typo3-extension-configuration-forms .category {
 	background-repeat: repeat-x;
 	border: 1px solid #adadad;

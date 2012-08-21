@@ -50,13 +50,21 @@
 		font-weight: bold;
 		color: #fff;
 
+		cursor: pointer;
+
 
 		&:hover {
 			background: rgba(200,200,200,.3);
 		}
 
 		.DataTables_sort_icon {
-			display: none;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 5px;
+
+			&.ui-icon-carat-2-n-s {
+				background: none;
+			}
 		}
 	}
 

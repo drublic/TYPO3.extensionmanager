@@ -60,8 +60,10 @@
 		}
 	}
 
+	// All lines
 	tr {
 
+		// Reset some values that get applied by jQuery UI styling
 		&.odd,
 		&.even {
 			td {
@@ -83,6 +85,7 @@
 			}
 		}
 
+		// Add some stuff to match corporate design
 		td {
 			background: none;
 			padding: 8px 10px;
@@ -103,17 +106,20 @@
 			}
 		}
 
+		// Zebra-look
+		&:nth-child(2n) {
+			background: #fff;
+		}
+
+		&:nth-child(2n + 1) {
+			background: #f7f7f7;
+		}
+
+		// Hovering lines
 		&:hover {
 			background: #ececec;
 		}
-	}
 
-	.odd {
-		background: #fff;
-	}
-
-	.even {
-		background: #f7f7f7;
 	}
 }
 

@@ -26,16 +26,17 @@
  ***************************************************************/
 
 /**
- * abstract action controller.
+ * Abstract action controller.
  *
  * @author Susanne Moog <typo3@susannemoog.de>
  * @package Extension Manager
- * @subpackage Controller
+ * @subpackage controller
  */
 class Tx_Extensionmanager_Controller_AbstractController extends Tx_Extbase_MVC_Controller_ActionController {
 
 	/**
-	 * Resolve view and initialize some general view-variables
+	 * Resolve view and initialize the general view-variables extensionName,
+	 * controllerName and actionName based on the request object
 	 *
 	 * @return Tx_Fluid_View_TemplateView
 	 */

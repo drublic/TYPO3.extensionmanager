@@ -83,7 +83,7 @@ class Tx_Extensionmanager_ViewHelpers_ImageViewHelper extends Tx_Fluid_ViewHelpe
 		$image = '';
 		try {
 			$image = parent::render($src, $width, $height, $minWidth, $minHeight, $maxWidth, $maxHeight);
-		} catch(t3lib_file_exception_FileDoesNotExistException $e) {
+		} catch (t3lib_file_exception_FileDoesNotExistException $e) {
 			// ignore not found images
 		}
 		return $image;

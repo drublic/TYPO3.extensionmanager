@@ -201,7 +201,7 @@ class Tx_Extensionmanager_Domain_Model_ConfigurationItem extends Tx_Extbase_Doma
 	}
 
 	/**
-	 * @param int $highlight
+	 * @param integer $highlight
 	 * @return void
 	 */
 	public function setHighlight($highlight) {
@@ -209,7 +209,7 @@ class Tx_Extensionmanager_Domain_Model_ConfigurationItem extends Tx_Extbase_Doma
 	}
 
 	/**
-	 * @return int
+	 * @return integer
 	 */
 	public function getHighlight() {
 		return $this->highlight;

@@ -37,7 +37,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	/**
 	 * Contains default categories.
 	 *
-	 * @var  array
+	 * @var array
 	 */
 	protected static $defaultCategories = array(
 		0 => 'be',
@@ -54,7 +54,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	/**
 	 * Contains default states.
 	 *
-	 * @var  array
+	 * @var array
 	 */
 	protected static $defaultStates = array(
 		0 => 'alpha',
@@ -84,7 +84,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	protected $version = '';
 
 	/**
-	 * @var int
+	 * @var integer
 	 */
 	protected $integerVersion = 0;
 
@@ -99,12 +99,12 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	protected $description = '';
 
 	/**
-	 * @var int
+	 * @var integer
 	 */
 	protected $state = 0;
 
 	/**
-	 * @var int
+	 * @var integer
 	 */
 	protected $category = 0;
 
@@ -139,7 +139,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	protected $md5hash = '';
 
 	/**
-	 * @var int
+	 * @var integer
 	 */
 	protected $reviewState;
 
@@ -155,10 +155,9 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 
 	/**
 	 * @internal
-	 * @var int
+	 * @var integer
 	 */
 	protected $position = 0;
-
 
 	/**
 	 * @param Tx_Extbase_Object_ObjectManager $objectManager
@@ -207,7 +206,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	}
 
 	/**
-	 * @return int
+	 * @return integer
 	 */
 	public function getCategory() {
 		return $this->category;
@@ -305,7 +304,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	}
 
 	/**
-	 * @param int $state
+	 * @param integer $state
 	 * @return void
 	 */
 	public function setState($state) {
@@ -313,7 +312,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	}
 
 	/**
-	 * @return int
+	 * @return integer
 	 */
 	public function getState() {
 		return $this->state;
@@ -439,6 +438,12 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 		return $this->md5hash;
 	}
 
+	/**
+	 * Possible install pathes
+	 *
+	 * @static
+	 * @return array
+	 */
 	public static function returnInstallPaths() {
 		$installPaths = array(
 			'System' => PATH_typo3 . 'sysext/',
@@ -448,6 +453,12 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 		return $installPaths;
 	}
 
+	/**
+	 * Allowed install pathes
+	 *
+	 * @static
+	 * @return array
+	 */
 	public static function returnAllowedInstallPaths() {
 		$installPaths = self::returnInstallPaths();
 		if (!(isset($GLOBALS['TYPO3_CONF_VARS']['EXT']['allowSystemInstall']) &&
@@ -457,6 +468,12 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 		return $installPaths;
 	}
 
+	/**
+	 * Allowed install names: System, Global, Local
+	 *
+	 * @static
+	 * @return array
+	 */
 	public static function returnAllowedInstallTypes() {
 		$installPaths = self::returnAllowedInstallPaths();
 		return array_keys($installPaths);

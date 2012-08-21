@@ -67,7 +67,10 @@ class Tx_Extensionmanager_Controller_ActionController extends Tx_Extensionmanage
 	 */
 	public function initializeAction() {
 		if (!$this->request->hasArgument('extension')) {
-			throw new Tx_Extensionmanager_Exception_ExtensionManager('Required Argument Extension not set!', 1342874433);
+			throw new Tx_Extensionmanager_Exception_ExtensionManager(
+				'Required argument extension not set!',
+				1342874433
+			);
 		}
 	}
 

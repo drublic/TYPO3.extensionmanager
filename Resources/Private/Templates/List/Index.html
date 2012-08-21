@@ -48,8 +48,16 @@
 				<td>
 					<em:toggleExtensionInstallationState extension="{extension}" />
 				</td>
-				<td title="{extension.description}">
-					<em:image src="../{extension.siteRelPath}/ext_icon.gif" alt="{extension.title}" />{extension.title}
+				<f:if condition="{extension.description}">
+					<f:then>
+						<td title="{extension.description}">
+					</f:then>
+					<f:else>
+						<td>
+					</f:else>
+				</f:if>
+
+					<em:image src="../{extension.siteRelPath}/{extension.ext_icon}" alt="{extension.title}" height="16" />{extension.title}
 				</td>
 				<td>
 					{extensionKey}

@@ -2,7 +2,7 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012
+ *  (c) 2012 Susanne Moog, <typo3@susannemoog.de>
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -263,7 +263,11 @@ class Tx_Extensionmanager_ViewHelpers_Form_TypoScriptConstantsViewHelper
 	 */
 	protected function renderUserFunction(Tx_Extensionmanager_Domain_Model_ConfigurationItem $configuration) {
 		$userFunction = $configuration->getGeneric();
-		$userFunctionParams = array('fieldName' => $configuration->getName(), 'fieldValue' => $configuration->getValue());
+		$userFunctionParams = array(
+			'fieldName' => $this->getName($configuration),
+			'fieldValue' => $configuration->getValue(),
+			'propertyName' => $configuration->getName(),
+		);
 		return t3lib_div::callUserFunction($userFunction, $userFunctionParams, $this, '');
 	}
 

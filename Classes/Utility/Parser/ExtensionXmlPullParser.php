@@ -51,10 +51,8 @@ class Tx_Extensionmanager_Utility_Parser_ExtensionXmlPullParser extends Tx_Exten
 
 	/**
 	 * Class constructor.
-	 *
-	 * @return void
 	 */
-	function __construct() {
+	public function __construct() {
 		$this->requiredPhpExtensions = 'xmlreader';
 
 		if ($this->isAvailable()) {
@@ -159,8 +157,8 @@ class Tx_Extensionmanager_Utility_Parser_ExtensionXmlPullParser extends Tx_Exten
 	/**
 	 * Method is invoked when parser accesses end tag of an element.
 	 *
-	 * @param   string	 $elementName: element name at parser's current position
-	 * @return  void
+	 * @param string $elementName: element name at parser's current position
+	 * @return void
 	 */
 	protected function endElement($elementName) {
 		switch ($elementName) {

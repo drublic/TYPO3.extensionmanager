@@ -64,6 +64,9 @@ class Tx_Extensionmanager_Utility_Dependency implements t3lib_Singleton {
 	 */
 	protected $availableExtensions = array();
 
+	/**
+	 * @var array
+	 */
 	protected $errors = array();
 
 	/**

@@ -93,7 +93,7 @@ class Tx_Extensionmanager_Domain_Repository_ConfigurationItemRepository {
 	 * Builds a configuration array from each line (option) of the config file
 	 *
 	 * @param string $configurationOption config file line representing one setting
-	 * @param $extension
+	 * @param array $extension
 	 * @return array
 	 */
 	protected function buildConfigurationArray($configurationOption, $extension) {
@@ -211,9 +211,17 @@ class Tx_Extensionmanager_Domain_Repository_ConfigurationItemRepository {
 	 */
 	protected function mergeWithExistingConfiguration(array $configuration, array $extension) {
 		$currentExtensionConfig = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$extension['key']]);
-		if (is_array($currentExtensionConfig)) {
-			$configuration =  t3lib_div::array_merge_recursive_overrule($configuration, $currentExtensionConfig);
+		$flatExtensionConfig = t3lib_utility_Array::flatten($currentExtensionConfig);
+		$valuedCurrentExtensionConfig = array();
+
+		foreach ($flatExtensionConfig as $key => $value) {
+			$valuedCurrentExtensionConfig[$key]['value'] = $value;
 		}
+
+		if (is_array($currentExtensionConfig)) {
+			$configuration =  t3lib_div::array_merge_recursive_overrule($configuration, $valuedCurrentExtensionConfig);
+		}
+
 		return $configuration;
 	}
 

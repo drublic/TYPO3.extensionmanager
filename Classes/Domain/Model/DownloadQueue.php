@@ -100,7 +100,7 @@ class Tx_Extensionmanager_Domain_Model_DownloadQueue implements t3lib_Singleton 
 	 * Remove an extension from download queue
 	 *
 	 * @param Tx_Extensionmanager_Domain_Model_Extension $extension
-	 * @param string Stack to remove extension from (download, update or install)
+	 * @param string $stack Stack to remove extension from (download, update or install)
 	 * @throws Tx_Extensionmanager_Exception_ExtensionManager
 	 * @return void
 	 */

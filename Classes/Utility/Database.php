@@ -34,6 +34,9 @@
  */
 class Tx_Extensionmanager_Utility_Database implements t3lib_Singleton {
 
+	/**
+	 * @var string
+	 */
 	const MULTI_LINEBREAKS = "\n\n\n";
 
 	/**
@@ -77,7 +80,7 @@ class Tx_Extensionmanager_Utility_Database implements t3lib_Singleton {
 	 *
 	 * @param string $table
 	 * @param array $fieldKeyInfo
-	 * @param bool $dropTableIfExists
+	 * @param boolean $dropTableIfExists
 	 * @return string
 	 */
 	protected function dumpTableHeader($table, array $fieldKeyInfo, $dropTableIfExists = FALSE) {

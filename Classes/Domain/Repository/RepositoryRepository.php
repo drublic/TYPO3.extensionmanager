@@ -34,8 +34,8 @@ class Tx_Extensionmanager_Domain_Repository_RepositoryRepository extends Tx_Extb
 	/**
 	 * Updates ExtCount and lastUpdated in Repository eg after import
 	 *
-	 * @param int $extCount
-	 * @param int $uid
+	 * @param integer $extCount
+	 * @param integer $uid
 	 * @return void
 	 */
 	public function updateRepositoryCount($extCount, $uid = 1) {

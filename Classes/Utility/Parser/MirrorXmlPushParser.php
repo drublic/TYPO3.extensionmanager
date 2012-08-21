@@ -42,7 +42,6 @@
 class Tx_Extensionmanager_Utility_Parser_MirrorXmlPushParser
 	extends Tx_Extensionmanager_Utility_Parser_MirrorXmlAbstractParser implements SplSubject {
 
-
 	/**
 	 * Keeps list of attached observers.
 	 *
@@ -52,7 +51,6 @@ class Tx_Extensionmanager_Utility_Parser_MirrorXmlPushParser
 
 	/**
 	 * Class constructor.
-	 *
 	 */
 	public function __construct() {
 		$this->requiredPhpExtensions = 'xml';
@@ -181,7 +179,7 @@ class Tx_Extensionmanager_Utility_Parser_MirrorXmlPushParser
 	 *
 	 * @param SplObserver $observer an observer to attach
 	 * @return void
-	 * @see	 $observers, detach(), notify()
+	 * @see $observers, detach(), notify()
 	 */
 	public function attach(SplObserver $observer) {
 		$this->observers[] = $observer;
@@ -192,7 +190,7 @@ class Tx_Extensionmanager_Utility_Parser_MirrorXmlPushParser
 	 *
 	 * @param SplObserver $observer an observer to detach
 	 * @return void
-	 * @see	 $observers, attach(), notify()
+	 * @see $observers, attach(), notify()
 	 */
 	public function detach(SplObserver $observer) {
 		$key = array_search($observer, $this->observers, TRUE);
@@ -206,7 +204,7 @@ class Tx_Extensionmanager_Utility_Parser_MirrorXmlPushParser
 	 *
 	 * @access public
 	 * @return void
-	 * @see	 $observers, attach(), detach()
+	 * @see $observers, attach(), detach()
 	 */
 	public function notify() {
 		foreach ($this->observers as $observer) {

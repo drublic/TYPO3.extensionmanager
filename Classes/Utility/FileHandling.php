@@ -201,7 +201,7 @@ class Tx_Extensionmanager_Utility_FileHandling implements t3lib_Singleton {
 	 * Constructs emConf and writes it to corresponding file
 	 *
 	 * @param array $extensionData
-	 * @param $rootPath
+	 * @param string $rootPath
 	 * @param Tx_Extensionmanager_Domain_Model_Extension $extension
 	 * @return void
 	 */
@@ -269,7 +269,7 @@ class Tx_Extensionmanager_Utility_FileHandling implements t3lib_Singleton {
 
 		foreach ($iterator as $key => $value) {
 			$archiveName = str_replace($extensionPath, '', $key);
-			if (t3lib_utility_String::isLastPartOfStr($key, '.')) {
+			if (t3lib_utility_String::isLastPartOfString($key, '.')) {
 				continue;
 			} else {
 				$zip->addFile($key, $archiveName);

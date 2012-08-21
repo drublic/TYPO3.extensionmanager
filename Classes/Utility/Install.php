@@ -64,7 +64,6 @@ class Tx_Extensionmanager_Utility_Install implements t3lib_Singleton {
 	 */
 	protected $databaseUtility;
 
-
 	/**
 	 * @var Tx_Extensionmanager_Domain_Repository_ExtensionRepository
 	 */

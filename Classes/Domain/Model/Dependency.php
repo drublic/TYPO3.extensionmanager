@@ -63,6 +63,9 @@ class Tx_Extensionmanager_Domain_Model_Dependency extends Tx_Extbase_DomainObjec
 		'conflicts'
 	);
 
+	/**
+	 * @var array
+	 */
 	public static $specialDependencies = array(
 		'typo3',
 		'php'
@@ -70,6 +73,7 @@ class Tx_Extensionmanager_Domain_Model_Dependency extends Tx_Extbase_DomainObjec
 
 	/**
 	 * @param string $highestVersion
+	 * @return void
 	 */
 	public function setHighestVersion($highestVersion) {
 		$this->highestVersion = $highestVersion;

@@ -37,36 +37,33 @@
  * Notice: ext/xml has proven to be buggy with entities.
  * Use at least PHP 5.2.9+ and libxml2 2.7.3+!
  *
- * @author	  Marcus Krause <marcus#exp2010@t3sec.info>
- * @author	  Steffen Kamper <info@sk-typo3.de>
+ * @author Marcus Krause <marcus#exp2010@t3sec.info>
+ * @author Steffen Kamper <info@sk-typo3.de>
  *
- * @since	   2010-02-10
- * @package	 TYPO3
+ * @since 2010-02-10
+ * @package TYPO3
  * @subpackage  EM
  */
 class Tx_Extensionmanager_Utility_Parser_ExtensionXmlPushParser extends Tx_Extensionmanager_Utility_Parser_ExtensionXmlAbstractParser implements SplSubject {
 
-
 	/**
 	 * Keeps current element to process.
 	 *
-	 * @var  string
+	 * @var string
 	 */
 	protected $element = NULL;
 
 	/**
 	 * Keeps list of attached observers.
 	 *
-	 * @var  SplObserver[]
+	 * @var SplObserver[]
 	 */
 	protected $observers = array();
 
 	/**
 	 * Class constructor.
-	 *
-	 * @return void
 	 */
-	function __construct() {
+	public function __construct() {
 		$this->requiredPhpExtensions = 'xml';
 
 		if ($this->isAvailable()) {
@@ -116,7 +113,7 @@ class Tx_Extensionmanager_Utility_Parser_ExtensionXmlPushParser extends Tx_Exten
 	/**
 	 * Method is invoked when parser accesses start tag of an element.
 	 *
-	 * @param resource  $parser parser resource
+	 * @param resource $parser parser resource
 	 * @param string $elementName element name at parser's current position
 	 * @param array $attrs array of an element's attributes if available
 	 * @return void
@@ -137,9 +134,9 @@ class Tx_Extensionmanager_Utility_Parser_ExtensionXmlPushParser extends Tx_Exten
 	/**
 	 * Method is invoked when parser accesses end tag of an element.
 	 *
-	 * @param   resource  $parser parser resource
-	 * @param   string	 $elementName: element name at parser's current position
-	 * @return  void
+	 * @param resource $parser parser resource
+	 * @param string $elementName: element name at parser's current position
+	 * @return void
 	 */
 	protected function endElement($parser, $elementName) {
 		switch ($elementName) {

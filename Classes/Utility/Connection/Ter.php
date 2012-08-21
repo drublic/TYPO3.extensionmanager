@@ -33,11 +33,15 @@
  * It contains methods for downloading and uploading extensions and related code
  *
  * @author Karsten Dambekalns <karsten@typo3.org>
- * @author	Kasper Skårhøj <kasperYYYY@typo3.com>
+ * @author Kasper Skårhøj <kasperYYYY@typo3.com>
  * @package TYPO3
  * @subpackage EM
  */
 class Tx_Extensionmanager_Utility_Connection_Ter {
+
+	/**
+	 * @var string
+	 */
 	public $wsdlUrl;
 
 	/**

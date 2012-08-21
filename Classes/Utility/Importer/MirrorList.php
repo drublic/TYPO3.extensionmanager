@@ -56,7 +56,6 @@ class Tx_Extensionmanager_Utility_Importer_MirrorList implements SplObserver {
 	 */
 	protected $arrTmpMirrors = array();
 
-
 	/**
 	 * Class constructor.
 	 *
@@ -96,7 +95,7 @@ class Tx_Extensionmanager_Utility_Importer_MirrorList implements SplObserver {
 	/**
 	 * Method receives an update from a subject.
 	 *
-	 * @param SplSubject $subject  a subject notifying this observer
+	 * @param SplSubject $subject a subject notifying this observer
 	 * @return void
 	 */
 	public function update(SplSubject $subject) {

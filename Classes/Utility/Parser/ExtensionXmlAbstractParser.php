@@ -37,7 +37,7 @@
  * @author Steffen Kamper <info@sk-typo3.de>
  *
  * @since 2010-02-09
- * @package	 TYPO3
+ * @package TYPO3
  * @subpackage EM
  */
 abstract class Tx_Extensionmanager_Utility_Parser_ExtensionXmlAbstractParser
@@ -393,7 +393,7 @@ abstract class Tx_Extensionmanager_Utility_Parser_ExtensionXmlAbstractParser
 	 *
 	 * @param $resetAll $all if TRUE, additionally extension properties are reset
 	 * @return void
-	 * @see	 $extensionKey, $version, $extensionDLCounter, $versionDLCounter,
+	 * @see $extensionKey, $version, $extensionDLCounter, $versionDLCounter,
 	 * 	 $title, $description, $state, $reviewstate, $category,
 	 * 	 $lastuploaddate, $uploadcomment, $dependencies, $authorname,
 	 * 	 $authoremail, $authorcompany, $ownerusername, $t3xfilemd5

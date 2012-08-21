@@ -210,7 +210,7 @@ class Tx_Extensionmanager_Service_Management implements t3lib_Singleton {
 	}
 
 	/**
-	 *
+	 * Get and resolve dependencies
 	 *
 	 * @param Tx_Extensionmanager_Domain_Model_Extension $extension
 	 * @return array

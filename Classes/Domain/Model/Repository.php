@@ -35,7 +35,6 @@
  */
 class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObject_AbstractEntity {
 
-
 	/**
 	 * Keeps repository title.
 	 *
@@ -90,7 +89,7 @@ class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObjec
 	 *
 	 * @access public
 	 * @return string title of repository
-	 * @see	 $title, setTitle()
+	 * @see $title, setTitle()
 	 */
 	public function getTitle() {
 		return $this->title;
@@ -102,7 +101,7 @@ class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObjec
 	 * @access public
 	 * @param string $title title of repository to set
 	 * @return void
-	 * @see	 $title, getTitle()
+	 * @see $title, getTitle()
 	 */
 	public function setTitle($title) {
 		if (!empty($title) && is_string($title)) {
@@ -115,7 +114,7 @@ class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObjec
 	 *
 	 * @access public
 	 * @return string title of repository
-	 * @see	 $title, setTitle()
+	 * @see $title, setTitle()
 	 */
 	public function getDescription() {
 		return $this->description;
@@ -139,7 +138,7 @@ class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObjec
 	 *
 	 * @access public
 	 * @return string URL of file that contains repository mirros
-	 * @see	 $mirrorListUrl, getMirrorListUrl()
+	 * @see $mirrorListUrl, getMirrorListUrl()
 	 */
 	public function getMirrorListUrl() {
 		return $this->mirrorListUrl;
@@ -153,7 +152,7 @@ class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObjec
 	 * @access public
 	 * @param string $url URL of file that contains repository mirrors
 	 * @return void
-	 * @see	 $mirrorListUrl, getMirrorListUrl()
+	 * @see $mirrorListUrl, getMirrorListUrl()
 	 */
 	public function setMirrorListUrl($url) {
 		if (empty($url) || (!empty($url) && t3lib_div::isValidUrl($url))) {
@@ -189,7 +188,7 @@ class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObjec
 	 * Method returns LastUpdate.
 	 *
 	 * @access public
-	 * @return int timestamp of last update
+	 * @return DateTime timestamp of last update
 	 */
 	public function getLastUpdate() {
 		return $this->lastUpdate;
@@ -199,10 +198,10 @@ class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObjec
 	 * Method sets LastUpdate.
 	 *
 	 * @access public
-	 * @param int $time URL of repository WSDL
+	 * @param DateTime $time URL of repository WSDL
 	 * @return void
 	 */
-	public function setLastUpdate($time) {
+	public function setLastUpdate(DateTime $time) {
 		$this->lastUpdate = $time;
 	}
 
@@ -235,7 +234,7 @@ class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObjec
 	 * @access public
 	 * @param Tx_Extensionmanager_Domain_Model_Mirrors $mirrors mirror list
 	 * @return void
-	 * @see	 $mirrors, getMirrors(), hasMirrors(), removeMirrors()
+	 * @see $mirrors, getMirrors(), hasMirrors(), removeMirrors()
 	 */
 	public function addMirrors(Tx_Extensionmanager_Domain_Model_Mirrors $mirrors) {
 		$this->mirrors = $mirrors;
@@ -273,7 +272,7 @@ class Tx_Extensionmanager_Domain_Model_Repository extends Tx_Extbase_DomainObjec
 	 *
 	 * @access public
 	 * @return void
-	 * @see	 $mirrors, addMirrors(), getMirrors(), hasMirrors()
+	 * @see $mirrors, addMirrors(), getMirrors(), hasMirrors()
 	 */
 	public function removeMirrors() {
 		unset($this->mirrors);

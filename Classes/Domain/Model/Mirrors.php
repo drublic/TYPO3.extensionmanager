@@ -63,7 +63,7 @@ class Tx_Extensionmanager_Domain_Model_Mirrors extends Tx_Extbase_DomainObject_A
 	 *
 	 * @param integer $mirrorId number (>=1) of mirror or NULL for random selection
 	 * @return void
-	 * @see	 $currentMirror
+	 * @see $currentMirror
 	 */
 	public function setSelect($mirrorId = NULL) {
 		if (is_null($mirrorId)) {

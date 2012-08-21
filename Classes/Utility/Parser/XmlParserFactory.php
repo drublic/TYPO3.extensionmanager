@@ -38,7 +38,7 @@ class Tx_Extensionmanager_Utility_Parser_XmlParserFactory {
 	 * An array with instances of xml parsers.
 	 * This member is set in the getParserInstance() function.
 	 *
-	 * @var	array
+	 * @var array
 	 */
 	static protected $instance = array();
 

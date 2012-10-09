@@ -2,20 +2,18 @@
 if (!defined('TYPO3_MODE')) {
 	die('Access denied.');
 }
-
 $TCA['tx_extensionmanager_domain_model_extension'] = array(
 	'ctrl' => $TCA['tx_extensionmanager_domain_model_extension']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'extensionkey,version,title,description,state,category,lastupdated,updatecomment,authorname,authoremail'
+		'showRecordFieldList' => 'extension_key,version,integer_version,title,description,state,category,last_updated,update_comment,author_name,author_email,md5hash,serialized_dependencies'
 	),
-	'feInterface' => $TCA['tx_extensionmanager_domain_model_extension']['feInterface'],
 	'columns' => array(
 		'extension_key' => array(
 			'exclude' => 0,
 			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.extensionkey',
 			'config' => array(
 				'type' => 'input',
-				'size' => '30',
+				'size' => '30'
 			)
 		),
 		'version' => array(
@@ -23,7 +21,15 @@ $TCA['tx_extensionmanager_domain_model_extension'] = array(
 			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.version',
 			'config' => array(
 				'type' => 'input',
-				'size' => '30',
+				'size' => '30'
+			)
+		),
+		'integer_version' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.integerversion',
+			'config' => array(
+				'type' => 'input',
+				'size' => '30'
 			)
 		),
 		'title' => array(
@@ -31,7 +37,7 @@ $TCA['tx_extensionmanager_domain_model_extension'] = array(
 			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.title',
 			'config' => array(
 				'type' => 'input',
-				'size' => '30',
+				'size' => '30'
 			)
 		),
 		'description' => array(
@@ -40,7 +46,7 @@ $TCA['tx_extensionmanager_domain_model_extension'] = array(
 			'config' => array(
 				'type' => 'text',
 				'cols' => '30',
-				'rows' => '5',
+				'rows' => '5'
 			)
 		),
 		'state' => array(
@@ -50,7 +56,7 @@ $TCA['tx_extensionmanager_domain_model_extension'] = array(
 				'type' => 'input',
 				'size' => '30',
 				'range' => array('lower' => 0, 'upper' => 1000),
-				'eval' => 'int',
+				'eval' => 'int'
 			)
 		),
 		'category' => array(
@@ -60,7 +66,7 @@ $TCA['tx_extensionmanager_domain_model_extension'] = array(
 				'type' => 'input',
 				'size' => '30',
 				'range' => array('lower' => 0, 'upper' => 1000),
-				'eval' => 'int',
+				'eval' => 'int'
 			)
 		),
 		'last_updated' => array(
@@ -69,7 +75,7 @@ $TCA['tx_extensionmanager_domain_model_extension'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => '30',
-				'eval' => 'datetime',
+				'eval' => 'datetime'
 			)
 		),
 		'update_comment' => array(
@@ -78,7 +84,7 @@ $TCA['tx_extensionmanager_domain_model_extension'] = array(
 			'config' => array(
 				'type' => 'text',
 				'cols' => '30',
-				'rows' => '5',
+				'rows' => '5'
 			)
 		),
 		'author_name' => array(
@@ -86,7 +92,7 @@ $TCA['tx_extensionmanager_domain_model_extension'] = array(
 			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.authorname',
 			'config' => array(
 				'type' => 'input',
-				'size' => '30',
+				'size' => '30'
 			)
 		),
 		'author_email' => array(
@@ -94,29 +100,44 @@ $TCA['tx_extensionmanager_domain_model_extension'] = array(
 			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.authoremail',
 			'config' => array(
 				'type' => 'input',
-				'size' => '30',
+				'size' => '30'
 			)
 		),
-		'lastversion' => array(
+		'current_version' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.lastversion',
+			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.currentversion',
 			'config' => array(
 				'type' => 'check',
-				'size' => '1',
+				'size' => '1'
 			)
 		),
-		'position' => array(
+		'review_state' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.lastversion',
+			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.reviewstate',
+			'config' => array(
+				'type' => 'check',
+				'size' => '1'
+			)
+		),
+		'md5hash' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.md5hash',
 			'config' => array(
 				'type' => 'input',
-				'size' => '10',
-				'eval' => 'int'
-			)
+				'size' => '1',
+			),
+		),
+		'serialized_dependencies' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:extensionmanager/Resources/Private/locallang_db.xml:tx_extensionmanager_domain_model_extension.serializedDependencies',
+			'config' => array(
+				'type' => 'input',
+				'size' => '30',
+			),
 		),
 	),
 	'types' => array(
-		'0' => array('showitem' => 'extensionkey;;;;1-1-1, version, title;;;;2-2-2, description;;;;3-3-3, state, category, lastupdated, updatecomment, authorname, authoremail')
+		'0' => array('showitem' => 'extensionkey;;;;1-1-1, version, integer_version, title;;;;2-2-2, description;;;;3-3-3, state, category, last_updated, update_comment, author_name, author_email, review_state, md5hash, serialized_dependencies')
 	),
 	'palettes' => array(
 		'1' => array('showitem' => '')

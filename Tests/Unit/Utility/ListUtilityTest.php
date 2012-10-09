@@ -1,4 +1,6 @@
 <?php
+namespace TYPO3\CMS\Extensionmanager\Tests\Unit\Utility;
+
 /***************************************************************
  * Copyright notice
  *
@@ -23,14 +25,15 @@
  ***************************************************************/
 
 /**
- * Testcase for the Tx_Extensionmanager_Utility_List class in the TYPO3 Core.
+ * List utility test
  *
  * @package Extension Manager
  * @subpackage Tests
  */
-class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTestCase {
+class ListUtilityTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
+
 	/**
-	 * @var Tx_Extensionmanager_Utility_List
+	 * @var \TYPO3\CMS\Extensionmanager\Utility\ListUtility
 	 */
 	private $fixture;
 
@@ -40,14 +43,14 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 	 * @return void
 	 */
 	public function setUp() {
-		$this->fixture = new Tx_Extensionmanager_Utility_List();
+		$this->fixture = new \TYPO3\CMS\Extensionmanager\Utility\ListUtility();
 		$this->loadedExtensions = $GLOBALS['TYPO3_LOADED_EXT'];
 		$GLOBALS['TYPO3_LOADED_EXT'] = array(
 			'cms' => 'cms',
 			'lang' => 'lang',
 			'news' => 'news',
 			'saltedpasswords' => 'saltedpasswords',
-			'rsaauth' => 'rsaauth',
+			'rsaauth' => 'rsaauth'
 		);
 	}
 
@@ -58,7 +61,6 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 		unset($this->fixture);
 		$GLOBALS['TYPO3_LOADED_EXT'] = $this->loadedExtensions;
 	}
-
 
 	/**
 	 * @return array
@@ -71,14 +73,14 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 					'lang' => array(),
 					'news' => array(),
 					'saltedpasswords' => array(),
-					'rsaauth' =>  array(),
+					'rsaauth' => array()
 				),
 				array(
 					'cms' => array('installed' => TRUE),
 					'lang' => array('installed' => TRUE),
 					'news' => array('installed' => TRUE),
 					'saltedpasswords' => array('installed' => TRUE),
-					'rsaauth' => array('installed' => TRUE),
+					'rsaauth' => array('installed' => TRUE)
 				)
 			),
 			'different extension lists' => array(
@@ -87,15 +89,15 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 					'lang' => array(),
 					'news' => array(),
 					'saltedpasswords' => array(),
-					'rsaauth' => array(),
+					'rsaauth' => array()
 				),
 				array(
 					'cms' => array('installed' => TRUE),
 					'lang' => array('installed' => TRUE),
 					'news' => array('installed' => TRUE),
 					'saltedpasswords' => array('installed' => TRUE),
-					'rsaauth' => array('installed' => TRUE),
-				),
+					'rsaauth' => array('installed' => TRUE)
+				)
 			),
 			'different extension lists - set2' => array(
 				array(
@@ -104,7 +106,7 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 					'news' => array(),
 					'saltedpasswords' => array(),
 					'rsaauth' => array(),
-					'em' => array(),
+					'em' => array()
 				),
 				array(
 					'cms' => array('installed' => TRUE),
@@ -112,7 +114,7 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 					'news' => array('installed' => TRUE),
 					'saltedpasswords' => array('installed' => TRUE),
 					'rsaauth' => array('installed' => TRUE),
-					'em' => array(),
+					'em' => array()
 				)
 			),
 			'different extension lists - set3' => array(
@@ -123,7 +125,7 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 					'news' => array(),
 					'saltedpasswords' => array(),
 					'rsaauth' => array(),
-					'em' => array(),
+					'em' => array()
 				),
 				array(
 					'cms' => array('installed' => TRUE),
@@ -132,7 +134,7 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 					'news' => array('installed' => TRUE),
 					'saltedpasswords' => array('installed' => TRUE),
 					'rsaauth' => array('installed' => TRUE),
-					'em' => array(),
+					'em' => array()
 				)
 			)
 		);
@@ -148,6 +150,7 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 	public function getAvailableAndInstalledExtensionsTest($availableExtensions, $expectedResult) {
 		$this->assertEquals($expectedResult, $this->fixture->getAvailableAndInstalledExtensions($availableExtensions));
 	}
+
 	/**
 	 * @return array
 	 */
@@ -159,7 +162,7 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 					'lang' => array('property1' => 'oldvalue'),
 					'news' => array(),
 					'saltedpasswords' => array(),
-					'rsaauth' =>  array(),
+					'rsaauth' => array()
 				),
 				array(
 					'property1' => 'property value1'
@@ -169,9 +172,9 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 					'lang' => array('property1' => 'oldvalue'),
 					'news' => array('property1' => 'property value1'),
 					'saltedpasswords' => array('property1' => 'property value1'),
-					'rsaauth' =>  array('property1' => 'property value1'),
-				),
-			),
+					'rsaauth' => array('property1' => 'property value1')
+				)
+			)
 		);
 	}
 
@@ -184,13 +187,13 @@ class Tx_Extensionmanager_Utility_ListTest extends Tx_Extbase_Tests_Unit_BaseTes
 	 * @return void
 	 */
 	public function enrichExtensionsWithEmConfInformation($extensions, $emConf, $expectedResult) {
-		$this->fixture->extensionRepository = $this->getAccessibleMock(
-			'Tx_Extensionmanager_Domain_Repository_ExtensionRepository',
-			array('findOneByExtensionKeyAndVersion')
-		);
-		$this->fixture->emConfUtility = $this->getMock('Tx_Extensionmanager_Utility_EmConf');
+		$this->fixture->extensionRepository = $this->getAccessibleMock('TYPO3\\CMS\\Extensionmanager\\Domain\\Repository\\ExtensionRepository', array('findOneByExtensionKeyAndVersion'));
+		$this->fixture->emConfUtility = $this->getMock('TYPO3\\CMS\\Extensionmanager\\Utility\\EmConfUtility');
 		$this->fixture->emConfUtility->expects($this->any())->method('includeEmConf')->will($this->returnValue($emConf));
 		$this->assertEquals($expectedResult, $this->fixture->enrichExtensionsWithEmConfAndTerInformation($extensions));
 	}
+
 }
+
+
 ?>

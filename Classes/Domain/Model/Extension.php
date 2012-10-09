@@ -1,4 +1,6 @@
 <?php
+namespace TYPO3\CMS\Extensionmanager\Domain\Model;
+
 /***************************************************************
  *  Copyright notice
  *
@@ -24,7 +26,6 @@
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
-
 /**
  * Main extension model
  *
@@ -32,14 +33,14 @@
  * @package Extension Manager
  * @subpackage Model
  */
-class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject_AbstractEntity {
+class Extension extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
 	/**
 	 * Contains default categories.
 	 *
 	 * @var array
 	 */
-	protected static $defaultCategories = array(
+	static protected $defaultCategories = array(
 		0 => 'be',
 		1 => 'module',
 		2 => 'fe',
@@ -56,7 +57,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	 *
 	 * @var array
 	 */
-	protected static $defaultStates = array(
+	static protected $defaultStates = array(
 		0 => 'alpha',
 		1 => 'beta',
 		2 => 'stable',
@@ -67,9 +68,8 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 		999 => 'n/a'
 	);
 
-
 	/**
-	 * @var Tx_Extbase_Object_ObjectManager
+	 * @var \TYPO3\CMS\Extbase\Object\ObjectManager
 	 */
 	protected $objectManager;
 
@@ -109,7 +109,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	protected $category = 0;
 
 	/**
-	 * @var DateTime
+	 * @var \DateTime
 	 */
 	protected $lastUpdated;
 
@@ -149,7 +149,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	protected $serializedDependencies = '';
 
 	/**
-	 * @var SplObjectStorage<Tx_Extensionmanager_Utility_Dependency>
+	 * @var \SplObjectStorage<Tx_Extensionmanager_Utility_Dependency>
 	 */
 	protected $dependencies = NULL;
 
@@ -160,10 +160,10 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	protected $position = 0;
 
 	/**
-	 * @param Tx_Extbase_Object_ObjectManager $objectManager
+	 * @param \TYPO3\CMS\Extbase\Object\ObjectManager $objectManager
 	 * @return void
 	 */
-	public function injectObjectManager(Tx_Extbase_Object_ObjectManager $objectManager) {
+	public function injectObjectManager(\TYPO3\CMS\Extbase\Object\ObjectManager $objectManager) {
 		$this->objectManager = $objectManager;
 	}
 
@@ -238,7 +238,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 			$return = self::$defaultCategories;
 		} else {
 			if (is_string($cat)) {
-					// default category
+				// default category
 				$catIndex = 4;
 				if (array_key_exists(strtolower($cat), self::$defaultCategories)) {
 					$catIndex = self::$defaultCategories[strtolower($cat)];
@@ -247,7 +247,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 			} else {
 				if (is_int($cat) && $cat >= 0) {
 					$catTitle = array_search($cat, self::$defaultCategories);
-						// default category
+					// default category
 					if (!$catTitle) {
 						$catTitle = 'misc';
 					}
@@ -289,15 +289,15 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	}
 
 	/**
-	 * @param DateTime $lastUpdated
+	 * @param \DateTime $lastUpdated
 	 * @return void
 	 */
-	public function setLastUpdated(DateTime $lastUpdated) {
+	public function setLastUpdated(\DateTime $lastUpdated) {
 		$this->lastUpdated = $lastUpdated;
 	}
 
 	/**
-	 * @return DateTime
+	 * @return \DateTime
 	 */
 	public function getLastUpdated() {
 		return $this->lastUpdated;
@@ -343,7 +343,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 			$defaultState = self::$defaultStates;
 		} else {
 			if (is_string($state)) {
-					// default state
+				// default state
 				$stateIndex = 999;
 				if (array_key_exists(strtolower($state), self::$defaultStates)) {
 					$stateIndex = self::$defaultStates[strtolower($state)];
@@ -352,7 +352,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 			} else {
 				if (is_int($state) && $state >= 0) {
 					$stateTitle = array_search($state, self::$defaultStates);
-						// default state
+					// default state
 					if (!$stateTitle) {
 						$stateTitle = 'n/a';
 					}
@@ -444,7 +444,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	 * @static
 	 * @return array
 	 */
-	public static function returnInstallPaths() {
+	static public function returnInstallPaths() {
 		$installPaths = array(
 			'System' => PATH_typo3 . 'sysext/',
 			'Global' => PATH_typo3 . 'ext/',
@@ -459,10 +459,9 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	 * @static
 	 * @return array
 	 */
-	public static function returnAllowedInstallPaths() {
+	static public function returnAllowedInstallPaths() {
 		$installPaths = self::returnInstallPaths();
-		if (!(isset($GLOBALS['TYPO3_CONF_VARS']['EXT']['allowSystemInstall']) &&
-			$GLOBALS['TYPO3_CONF_VARS']['EXT']['allowSystemInstall'])) {
+		if (!(isset($GLOBALS['TYPO3_CONF_VARS']['EXT']['allowSystemInstall']) && $GLOBALS['TYPO3_CONF_VARS']['EXT']['allowSystemInstall'])) {
 			unset($installPaths['System']);
 		}
 		return $installPaths;
@@ -474,7 +473,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	 * @static
 	 * @return array
 	 */
-	public static function returnAllowedInstallTypes() {
+	static public function returnAllowedInstallTypes() {
 		$installPaths = self::returnAllowedInstallPaths();
 		return array_keys($installPaths);
 	}
@@ -495,7 +494,7 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	}
 
 	/**
-	 * @param SplObjectStorage $dependencies
+	 * @param \SplObjectStorage $dependencies
 	 * @return void
 	 */
 	public function setDependencies($dependencies) {
@@ -503,22 +502,22 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	}
 
 	/**
-	 * @return SplObjectStorage
+	 * @return \SplObjectStorage
 	 */
 	public function getDependencies() {
 		if (!is_object($this->dependencies)) {
-			/** @var $dependencyUtility Tx_Extensionmanager_Utility_Dependency */
-			$dependencyUtility = $this->objectManager->get('Tx_Extensionmanager_Utility_Dependency');
+			/** @var $dependencyUtility \TYPO3\CMS\Extensionmanager\Utility\DependencyUtility */
+			$dependencyUtility = $this->objectManager->get('TYPO3\\CMS\\Extensionmanager\\Utility\\DependencyUtility');
 			$this->setDependencies($dependencyUtility->convertDependenciesToObjects($this->getSerializedDependencies()));
 		}
 		return $this->dependencies;
 	}
 
 	/**
-	 * @param Tx_Extensionmanager_Domain_Model_Dependency $dependency
+	 * @param \TYPO3\CMS\Extensionmanager\Domain\Model\Dependency $dependency
 	 * @return void
 	 */
-	public function addDependency(Tx_Extensionmanager_Domain_Model_Dependency $dependency) {
+	public function addDependency(\TYPO3\CMS\Extensionmanager\Domain\Model\Dependency $dependency) {
 		$this->dependencies->attach($dependency);
 	}
 
@@ -566,6 +565,8 @@ class Tx_Extensionmanager_Domain_Model_Extension extends Tx_Extbase_DomainObject
 	public function getPosition() {
 		return $this->position;
 	}
+
 }
+
 
 ?>

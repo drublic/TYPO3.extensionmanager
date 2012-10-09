@@ -71,7 +71,7 @@ module.exports = function (grunt) {
 
 		watch: {
 			scss: {
-				files: ['Resources/Private/Scss/main.scss', 'Resources/Private/Scss/**/_*.scss'],
+				files: ['Resources/Private/Scss/**/*.scss'],
 				tasks: 'rubysass:dev'
 			},
 

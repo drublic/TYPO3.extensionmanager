@@ -53,8 +53,6 @@ class RemoveExtensionViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\Link\Action
 		) {
 			return '';
 		}
-
-		// Building URI
 		$uriBuilder = $this->controllerContext->getUriBuilder();
 		$action = 'removeExtension';
 		$uriBuilder->reset();
@@ -63,21 +61,13 @@ class RemoveExtensionViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\Link\Action
 			'extension' => $extension['key']
 		), 'Action');
 		$this->tag->addAttribute('href', $uri);
-
-		// class-attribute
-		$classNames = array('removeExtension');
-		if (\TYPO3\CMS\Core\Extension\ExtensionManager::isLoaded($extension['key'])) {
-			$classNames[] = 'isLoadedWarning';
+		$cssClass = 'removeExtension';
+		if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded($extension['key'])) {
+			$cssClass .= ' isLoadedWarning';
 		}
-		$this->tag->addAttribute('class', implode(' ', $classNames));
-
-		$label = 'Remove';
-
-		// title-attribute
-		$this->tag->addAttribute('title', $label);
-
-		// Content
-		$this->tag->setContent($label);
+		$this->tag->addAttribute('class', $cssClass);
+		$this->tag->addAttribute('title', \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('extensionList.remove', 'extensionmanager'));
+		$this->tag->setContent(\TYPO3\CMS\Backend\Utility\IconUtility::getSpriteIcon('actions-edit-delete'));
 		return $this->tag->render();
 	}
 

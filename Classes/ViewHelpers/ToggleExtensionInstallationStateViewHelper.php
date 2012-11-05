@@ -47,7 +47,7 @@ class ToggleExtensionInstallationStateViewHelper extends \TYPO3\CMS\Fluid\ViewHe
 	 * @return string the rendered a tag
 	 */
 	public function render($extension) {
-		$requiredExtensions = \TYPO3\CMS\Core\Extension\ExtensionManager::getRequiredExtensionListArray();
+		$requiredExtensions = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getRequiredExtensionListArray();
 
 			// Required extensions can't be activated or deactivated
 		if (in_array($extension['key'], $requiredExtensions)) {
@@ -60,19 +60,10 @@ class ToggleExtensionInstallationStateViewHelper extends \TYPO3\CMS\Fluid\ViewHe
 			'extension' => $extension['key']
 		), 'Action');
 		$this->tag->addAttribute('href', $uri);
-
-		// class-attribute
-		$classNames = array('icon');
-		$classNames[] = $extension['installed'] ? 'icon-deactivate' : 'icon-activate';
-		$this->tag->addAttribute('class', implode(' ', $classNames));
-
-		$label = $extension['installed'] ? 'Deactivate' : 'Activate';
-
-		// title-attribute
-		$this->tag->addAttribute('title', $label);
-
-		// Content
-		$this->tag->setContent($label);
+		$label = $extension['installed'] ? 'deactivate' : 'activate';
+		$this->tag->addAttribute('title', \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('extensionList.' . $label, 'extensionmanager'));
+		$icon = $extension['installed'] ? 'uninstall' : 'install';
+		$this->tag->setContent(\TYPO3\CMS\Backend\Utility\IconUtility::getSpriteIcon('actions-system-extension-' . $icon));
 		return $this->tag->render();
 	}
 

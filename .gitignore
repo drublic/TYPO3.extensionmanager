@@ -19,3 +19,7 @@ Thumbs.db
 *.sublime-*
 
 node_modules
+
+Gruntfile.js
+package.json
+.editorconfig
